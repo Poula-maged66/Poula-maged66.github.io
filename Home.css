@@ -380,3 +380,25 @@ table thead td {
     position: absolute;
     margin-left: 1302px;
 }
+.about-us {
+    text-decoration: none;
+    color: white;
+    background: #5482a6;
+    border-radius: 64px;
+    margin-left: 92%;
+    margin-top: 36%;
+    position: fixed;
+    padding: 19px;
+    z-index: 100;
+}
+
+.link-of-pages {
+    text-align: center;
+}
+
+.about-us-table a {
+    padding: 15px;
+    color: #7676c7;
+    text-decoration: none;
+    font-size: 20px;
+}
