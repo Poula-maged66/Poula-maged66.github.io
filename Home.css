@@ -376,9 +376,7 @@ table thead td {
 .tid {
     width: 8%;
 }
-.fa-magic-wand-sparkles:before, .fa-wand-magic-sparkles:before {
-    content: "\e2ca";
-    margin-left: 1305px;
-    margin-top: -102px;
+.magic {
     position: absolute;
+    margin-left: 1302px;
 }
