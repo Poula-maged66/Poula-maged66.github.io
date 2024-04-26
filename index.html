@@ -23,6 +23,21 @@
          
          <main>
              <section id="magic"><i class="fa-solid fa-wand-magic-sparkles"></i></section>
+             <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const imgMagic = document.querySelector(".fa-wand-magic-sparkles");
+                    let isAlternate = false;
+        
+                    imgMagic.addEventListener("click", function() {
+                        if (isAlternate) {
+                            document.getElementById('stylesheet-2').href = 'Home.css';
+                        } else {
+                            document.getElementById('stylesheet-2').href = 'Home 2.css';
+                        }
+                        isAlternate = !isAlternate;
+                    });
+                });
+            </script>
             <section class="pic">
                 <div>
                     <img src="p5.jpg" alt="women" class="pw" id="himg">
