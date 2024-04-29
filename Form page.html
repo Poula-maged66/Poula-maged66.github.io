@@ -34,43 +34,55 @@
                 });
             </script>
     </nav>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
     <div class="formbox">
         <h1 class="reg">Registration</h1>
         <hr>
-        <form class="Form-container">
+        <form class="Form-container" onsubmit="validateInputs(); return false;">
             <div class="form-group">
-                <label for="firstName">First name:</label>
-                <input type="text" id="firstName" required>
-            </div>
-            <div class="form-group">
-                <label for="lastName">Last name:</label>
-                <input type="text" id="lastName" required>
-            </div>
-            <div class="form-group">
-                <label for="gender">Gender:</label>
-                <select name="gender" id="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="birthday">Birthday:</label>
-                <input type="date" id="birthday" required>
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <div class="error"></div>
             </div>
             <div class="form-group">
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" required>
+                <div class="error"></div>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
                 <input type="password" id="password" required>
+                <div class="error"></div>
             </div>
             <div class="form-group">
-                <label for="confirmPassword">Confirm password:</label>
-                <input type="password" id="confirmPassword" required>
+                <label for="password2">Confirm password:</label>
+                <input type="password" id="password2" required>
+                <div class="error"></div>
             </div>
             <button type="submit" id="button">Submit</button>
         </form>
+    </div>
+
+    <script>
+        // Validation logic and success/error handling (same as before)
+        // ...
+
+        // Example isValidEmail function (same as before)
+        const isValidEmail = email => {
+            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+</body>
+</html>
+
     </div>
     <footer>
         <div class="footerContainer">
