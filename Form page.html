@@ -34,50 +34,58 @@
                 });
             </script>
     </nav>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-</head>
-<body>
     <div class="formbox">
         <h1 class="reg">Registration</h1>
         <hr>
-        <form class="Form-container" onsubmit="validateInputs(); return false;">
+        <form class="Form-container" onsubmit="return validateForm()">
             <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" required>
-                <div class="error"></div>
+                <label for="firstName">First name:</label>
+                <input type="text" id="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last name:</label>
+                <input type="text" id="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" required>
             </div>
             <div class="form-group">
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" required>
-                <div class="error"></div>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
                 <input type="password" id="password" required>
-                <div class="error"></div>
             </div>
             <div class="form-group">
-                <label for="password2">Confirm password:</label>
-                <input type="password" id="password2" required>
-                <div class="error"></div>
+                <label for="confirmPassword">Confirm password:</label>
+                <input type="password" id="confirmPassword" required>
             </div>
             <button type="submit" id="button">Submit</button>
         </form>
     </div>
 
     <script>
-        // Validation logic and success/error handling (same as before)
-        // ...
+        function validateForm() {
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
 
-        // Example isValidEmail function (same as before)
-        const isValidEmail = email => {
-            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(String(email).toLowerCase());
+            // Add your validation logic here
+            // For example, check if passwords match, validate email format, etc.
+
+            // Return true to allow form submission or false to prevent it
+            return true;
         }
     </script>
 </body>
