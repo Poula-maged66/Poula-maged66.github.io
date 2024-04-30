@@ -23,13 +23,13 @@
 }
 
 
-.ul #li {
+.ul li {
     padding: 16px;
     transition: 0.6s;
     /* position: relative; */
 }
 
-.ul #li::before {
+.ul li::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -40,7 +40,7 @@
     transition: 0.6s;
 }
 
-.ul #li:hover::before {
+.ul li:hover::before {
     width: 100%;
 }
 
