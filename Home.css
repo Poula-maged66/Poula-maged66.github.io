@@ -1,4 +1,5 @@
 
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -23,13 +24,13 @@
 }
 
 
-.ul #li {
+.ul li {
     padding: 16px;
     transition: 0.6s;
     position: relative;
 }
 
-.ul #li::before {
+.ul li::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -40,15 +41,22 @@
     transition: 0.6s;
 }
 
-.ul #li:hover::before {
+.ul li:hover::before {
     width: 100%;
 }
 
-#li:hover {
+/* li:hover {
     background-color: black;
     color: white;
-}
+} */
 /*        */
+li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+
 .ulfooter li {
     padding: 16px;
     transition: 0.6s;
@@ -68,6 +76,11 @@
 
 .ulfooter li:hover::before {
     width: 100%;
+}
+
+#li:hover {
+    background-color: black;
+    color: white;
 }
 
 h3 {
