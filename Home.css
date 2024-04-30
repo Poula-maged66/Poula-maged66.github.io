@@ -1,5 +1,4 @@
 
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -24,13 +23,13 @@
 }
 
 
-.ul li {
+.ul #li {
     padding: 16px;
     transition: 0.6s;
     /* position: relative; */
 }
 
-.ul li::before {
+.ul #li::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -41,7 +40,7 @@
     transition: 0.6s;
 }
 
-.ul li:hover::before {
+.ul #li:hover::before {
     width: 100%;
 }
 
@@ -663,4 +662,10 @@ footer{
         .content{
             width: 100%;
         }
+    }
+
+    .btn {
+        position: absolute;
+        margin-left: 0;
+        margin-top: 0;
     }
