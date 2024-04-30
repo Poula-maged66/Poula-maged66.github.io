@@ -26,12 +26,12 @@
 .ul li {
     padding: 16px;
     transition: 0.6s;
-    /* position: relative; */
+    position: relative;
 }
 
 .ul li::before {
     content: "";
-/*     position: absolute; */
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 0; 
