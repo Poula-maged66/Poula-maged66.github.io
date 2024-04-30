@@ -52,7 +52,7 @@
 .ulfooter li {
     padding: 16px;
     transition: 0.6s;
-/*     position: relative; */
+    position: relative;
 }
 
 .ulfooter li::before {
